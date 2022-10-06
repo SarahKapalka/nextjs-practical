@@ -1,0 +1,76 @@
+.header p{
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+
+}
+.header{
+    padding-top: 2rem;
+    margin: 3rem 2rem;
+    
+}
+.alive{
+    text-shadow: 0 0 10px rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+.dead{
+    color: rgb(153, 153, 153);
+}
+.image{
+    border-radius: 10px;
+    display: block;
+}
+.back{
+    display: block;
+    color:rgb(0, 255, 0);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: .5s;
+    margin-bottom: 1rem;
+}
+.back:hover{
+    color: white;
+    transition: .5s;
+    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content:space-around;
+    margin: 2rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    justify-content: space-evenly;
+}
+.card{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    width: 250px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card:hover{
+    border: 1px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+    box-shadow: 0 0 2rem 0.3rem rgb(34, 139, 34);
+    transition: 0.5s;
+}
+.card p{
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+.card h2{
+    font-weight: bolder;
+}
+.main h3{
+    font-size: 2rem;
+    text-align: center;
+}
