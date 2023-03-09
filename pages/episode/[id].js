@@ -61,11 +61,11 @@ export default function episode({episode}) {
         </a>
     </Link>
     <div className={Styles.container}>
-      {episode.characters.map((character)=>{
+      {episode.characters.map((character, index)=>{
         return(
-          <Link href={"/character/"+character.id.toString()}>
+          <Link href={"/character/"+character.id.toString()} key={index}>
           <div className={Styles.card} key={character.id}>
-            <Image src={character.image} width="250px" height="250px" className={Styles.image}></Image>
+            <Image src={character.image} width="250px" height="250px" className={Styles.image} alt="character-image"></Image>
             <div><span className={Styles.info}>Name:</span> {character.name}</div>
             <div><span className={Styles.info}>Gender:</span> {character.gender}</div>
             <div><span className={Styles.info}>Status:</span> <span className={character.status==="Alive"?Styles.alive: Styles.dead}>{character.status}</span></div>

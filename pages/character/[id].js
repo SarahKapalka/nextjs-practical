@@ -3,7 +3,7 @@ import Styles from '../../styles/character.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ({character}) {
+export default function character({character}) {
   return (
     <div className={Styles.main}>
         <div className={Styles.header}>
@@ -12,7 +12,7 @@ export default function ({character}) {
                      go home
                 </a>
             </Link>
-            <Image src={character.image} width={250} height={250} className={Styles.image}></Image>
+            <Image src={character.image} width={250} height={250} className={Styles.image} alt="character-image"></Image>
                 <p>{character.name}</p>
                 <p>{character.gender}</p>
                 <p className={character.status=="Alive"?Styles.alive:Styles.dead}>{character.status}</p>
